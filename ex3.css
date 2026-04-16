@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #222;
+  padding: 20px;
+}
+
+.footer-item {
+  flex: 0 0 50%; /* Chia đôi chiều rộng (2 cột) */
+  color: white;
+  padding: 10px 0;
+  font-family: serif;
+}
+
+/* Khi màn hình nhỏ (điện thoại) */
+@media (max-width: 600px) {
+  .footer-item {
+    flex: 0 0 100%; /* Chiếm toàn bộ chiều rộng (1 cột) */
+    font-size: 24px;
+    padding: 15px 20px;
+  }
+}
