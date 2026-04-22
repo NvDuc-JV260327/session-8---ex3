@@ -1,22 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: #222;
-  padding: 20px;
 }
 
-.footer-item {
-  flex: 0 0 50%; /* Chia đôi chiều rộng (2 cột) */
+.box {
+  background-color: black;
   color: white;
-  padding: 10px 0;
-  font-family: serif;
+  width: 50%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
-/* Khi màn hình nhỏ (điện thoại) */
-@media (max-width: 600px) {
-  .footer-item {
-    flex: 0 0 100%; /* Chiếm toàn bộ chiều rộng (1 cột) */
-    font-size: 24px;
-    padding: 15px 20px;
+@media screen and (max-width : 768px) {
+  .box {
+    width: 100%;
+    min-height: 100px;
+    font-size: 40px;
+    padding-left: 50px;
   }
 }
